@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>Emmanuel BARANGER (3D), Pierre GEOFFROY (FDM), Sébatien MARQUE (Panel), Laurent HAYVEL (Texture)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>0.75</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/Zlin-50lx/z50lx-splash.rgb</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Zlin-50lx/Sounds/z50lx-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Zlin-50lx/Models/z50lx.xml</path>
+    </model>
+
+    <panel>
+      <visibility archive="y">false</visibility>
+    </panel>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+    </multiplay>
+
+    <help>
+      <title>Zlin z50 lx</title>
+      <line>______________________________________________</line>
+    </help>
+
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>175</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+    <menubar>
+      <default>
+        <menu n="10">
+          <label>Zlin 50 lx</label>
+          <enabled type="bool">true</enabled>
+          <item>
+            <label>Select Livery</label>
+            <binding>
+              <command>nasal</command>
+              <script>aircraft.livery.dialog.toggle()</script>
+          </binding>
+          </item>
+        </menu>
+      </default>
+    </menubar>
+
+  </sim>
+  
+  <input>
+    <keyboard include="Nasal/z50lx-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <z50lx>
+      <file>Aircraft/Zlin-50lx/Nasal/doors.nas</file>
+      <file>Aircraft/Zlin-50lx/Nasal/fuel.nas</file>
+      <file>Aircraft/Zlin-50lx/Nasal/liveries.nas</file>
+    </z50lx>
+    <pilot-g>
+      <file>Aircraft/Zlin-50lx/Nasal/pilot-g.nas</file>
+    </pilot-g>
+  </nasal>
+
+</PropertyList>

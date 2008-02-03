@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Jano</name>
+            <index type="int">1</index>
+            <texture>jano.rgb</texture>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

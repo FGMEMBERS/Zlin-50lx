@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <submodel> 
+    <name>engine-smoke</name>
+    <model>Aircraft/Zlin-50lx/Effects/Submodels/Smoke/smoke.xml</model>
+    <trigger>controls/smoke</trigger>
+    <speed>0</speed>
+    <repeat>true</repeat>
+    <delay>0.0001</delay>
+    <count>-1</count>
+    <x-offset> -6.0 </x-offset>
+    <y-offset>  0.0 </y-offset>
+    <z-offset> -1.0 </z-offset>
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0.0</pitch-offset>
+    <eda>100</eda>
+    <wind>true</wind>
+    <buoyancy>32</buoyancy>
+    <life>15</life>
+  </submodel>
+
+</PropertyList>

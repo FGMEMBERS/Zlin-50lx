@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!--  <path>puff-R.ac</path> -->
+<!--  <path>puff-G.ac</path> -->
+<!--  <path>puff-Y.ac</path> -->
+  <path>puff-B.ac</path>
+<!--  <path>puff-W.ac</path> -->
+
+  <animation>
+    <object-name>puff</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>puff</object-name>
+  </animation>
+
+</PropertyList>
