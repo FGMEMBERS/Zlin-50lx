@@ -1,36 +1,20 @@
-# Damped G value - starts at 1.
-GDamped = 1.0;
+var lpfilter = aircraft.lowpass.new(1); #raise this to filter more
 
 blackout = func {
     GCurrent = getprop("/accelerations/pilot-g[0]");
-    GMin = getprop("/accelerations/pilot-gmin[0]");
-    GMax = getprop("/accelerations/pilot-gmax[0]");
     
     if (GCurrent == nil) { GCurrent = 1.0; }
-    if (GMin == nil) { GMin = 1.0; }
-    if (GMax == nil) { GMax = 1.0; }
-    
-    # Updated the GDamped using a low-pass filter.
-    # Blackout onsets and clears slower than redout
-    # so we use a different filter in each case.
-    if (GDamped < 0)
-    {
-        GDamped = GDamped * 0.80 + GCurrent * 0.20;
-    }
-    else
-    {
-        GDamped = GDamped * 0.90 + GCurrent * 0.10;
-    }
+    lpfilter.filter(GCurrent);
 
-    if (GDamped > 2.5) 
+    if (lpfilter.get() > 2.5) #minimum value to black out
     {
         setprop("/sim/rendering/redout/red",0);
-        setprop("/sim/rendering/redout/alpha",(GDamped/7));
+        setprop("/sim/rendering/redout/alpha",(lpfilter.get()-2.5)/7);
     }
-    elsif (GDamped < -1) 
+    elsif (lpfilter.get() < -1)  #minimum to redout
     {
         setprop("/sim/rendering/redout/red",1);
-        setprop("/sim/rendering/redout/alpha",(GDamped/7)*-1);
+        setprop("/sim/rendering/redout/alpha",(lpfilter.get()+1)/-7);
     }
     else 
     {
