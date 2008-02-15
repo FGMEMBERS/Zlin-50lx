@@ -59,6 +59,10 @@
 
   </sim>
   
+  <controls>
+    <smoke alias="/sim/multiplay/generic/int[0]"/>
+  </controls>
+  
   <input>
     <keyboard include="Nasal/z50lx-keyboard.xml"/>
   </input>

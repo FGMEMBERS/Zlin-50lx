@@ -368,6 +368,30 @@
         </volume>
       </click>
 
-</fx>
+    <rain>
+      <name>rain</name>
+      <mode>looped</mode>
+      <path>Aircraft/Zlin-50lx/Sounds/rain_canopy.wav</path>
+      <condition>
+        <greater-than>
+          <property>/environment/metar/rain-norm</property>
+          <value>0.2</value>
+        </greater-than>
+      </condition>
+      <volume>
+        <property>/environment/metar/rain-norm</property>
+        <factor>1.00</factor>
+        <offset>0.00</offset>
+        <min>0.4</min>
+        <max>0.9</max>
+      </volume>
+      <pitch>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.001</factor>
+        <offset>1.0</offset>
+      </pitch>
+    </rain>
+
+  </fx>
  
 </PropertyList>
