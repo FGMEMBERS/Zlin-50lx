@@ -32,7 +32,18 @@
 
     <help>
       <title>Zlin z50 lx</title>
-      <line>______________________________________________</line>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+      <key>
+        <name>S</name>
+        <desc>Start smoke</desc>
+      </key>
+      <key>
+        <name>u</name>
+        <desc>Stop smoke</desc>
+      </key>
     </help>
 
     <weight n="0">
