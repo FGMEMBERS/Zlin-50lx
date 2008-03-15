@@ -84,9 +84,6 @@
       <file>Aircraft/Zlin-50lx/Nasal/fluids.nas</file>
       <file>Aircraft/Zlin-50lx/Nasal/liveries.nas</file>
     </z50lx>
-    <pilot-g>
-      <file>Aircraft/Zlin-50lx/Nasal/pilot-g.nas</file>
-    </pilot-g>
   </nasal>
 
 </PropertyList>
