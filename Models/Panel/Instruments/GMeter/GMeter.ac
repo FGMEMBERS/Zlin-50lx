@@ -10,7 +10,7 @@ OBJECT poly
 name "Bezel"
 data 10
 Circle.002
-texture "GMeter.rgb"
+texture "GMeter.png"
 texrep 1 1
 crease 30.000000
 numvert 128
@@ -820,7 +820,7 @@ OBJECT poly
 name "Face"
 data 10
 Circle.001
-texture "GMeter.rgb"
+texture "GMeter.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -1055,7 +1055,7 @@ OBJECT poly
 name "Reset"
 data 10
 Circle.009
-texture "GMeter.rgb"
+texture "GMeter.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -2059,6 +2059,8 @@ OBJECT poly
 name "vitre"
 data 5
 vitre
+texture "glass.png"
+texrep 1 1
 crease 30.000000
 numvert 290
 -0.002363 0 0

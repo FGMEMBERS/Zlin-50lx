@@ -12,7 +12,7 @@ OBJECT poly
 name "AdjDn"
 data 5
 Plane
-texture "glass.rgb"
+texture "glass.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -33,7 +33,7 @@ OBJECT poly
 name "AdjUp"
 data 9
 Plane.001
-texture "glass.rgb"
+texture "glass.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -655,7 +655,7 @@ OBJECT poly
 name "Face"
 data 6
 Circle
-texture "clock.rgb"
+texture "clock.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -2781,7 +2781,7 @@ OBJECT poly
 name "vitre"
 data 5
 vitre
-texture "glass.rgb"
+texture "glass.png"
 texrep 1 1
 crease 30.000000
 numvert 290

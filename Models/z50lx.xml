@@ -4,11 +4,19 @@
 
   <path>z50lx.ac</path>
 
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Zlinb-50lx/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
-    <object-name>pilote</object-name>
     <object-name>axe</object-name>
     <object-name>axeG</object-name>
     <object-name>roueG</object-name>
@@ -47,7 +55,6 @@
     <type>material</type>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
-    <object-name>pilote</object-name>
     <object-name>axe</object-name>
     <object-name>axeG</object-name>
     <object-name>roueG</object-name>
@@ -70,10 +77,20 @@
     <object-name>ajout</object-name>
     <object-name>cables</object-name>
     <object-name>antenne</object-name>
-    <property-base>/sim/model/livery</property-base>
+    <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>jano.rgb</texture>
   </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -0.776 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.060 </z-m>
+    </offsets>
+  </model>
 
   <!-- Particules pour OSG -->
   <model>
@@ -87,18 +104,6 @@
       <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
-
-  <!-- Pilote invisible depuis le cockpit -->
-  <animation>
-    <type>select</type>
-    <object-name>pilote</object-name>
-    <condition>
-      <greater-than>
-        <property>sim/current-view/view-number</property>
-        <value>0</value>
-      </greater-than>
-    </condition>
-  </animation>
 
   <!-- Planche de bord -->
   <model>

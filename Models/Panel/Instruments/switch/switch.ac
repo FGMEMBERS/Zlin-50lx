@@ -6,7 +6,7 @@ OBJECT poly
 name "switch"
 data 6
 switch
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 1219
@@ -9875,7 +9875,7 @@ OBJECT poly
 name "tour"
 data 4
 tour
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 193

@@ -18,7 +18,7 @@ OBJECT poly
 name "Cube"
 data 4
 Cube
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 20
@@ -139,7 +139,7 @@ OBJECT poly
 name "Cube.001"
 data 8
 Cube.002
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 20
@@ -260,7 +260,7 @@ OBJECT poly
 name "Cube.003"
 data 8
 Cube.004
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 564
@@ -4692,7 +4692,7 @@ OBJECT poly
 name "Cube.004"
 data 8
 Cube.005
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 164
@@ -5972,7 +5972,7 @@ OBJECT poly
 name "Cube.005"
 data 8
 Cube.006
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -6047,7 +6047,7 @@ OBJECT poly
 name "Cube.006_1"
 data 8
 Cube.007
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -6236,7 +6236,7 @@ OBJECT poly
 name "Cube.007"
 data 8
 Cube.011
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 264
@@ -8304,7 +8304,7 @@ OBJECT poly
 name "Cube.008"
 data 8
 Cube.012
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -8382,7 +8382,7 @@ OBJECT poly
 name "Cube.009"
 data 8
 Cube.008
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -8482,7 +8482,7 @@ OBJECT poly
 name "Cube.010_1"
 data 8
 Cube.009
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -8528,7 +8528,7 @@ OBJECT poly
 name "Cube.011"
 data 8
 Cube.010
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -8581,7 +8581,7 @@ OBJECT poly
 name "Cube.012"
 data 8
 Cube.013
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -8634,7 +8634,7 @@ OBJECT poly
 name "Cube.013"
 data 8
 Cube.014
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -8687,7 +8687,7 @@ OBJECT poly
 name "Cube.014"
 data 8
 Cube.015
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 56
@@ -9068,7 +9068,7 @@ OBJECT poly
 name "Cube.015"
 data 8
 Cube.016
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -9143,7 +9143,7 @@ OBJECT poly
 name "Cube.016_1"
 data 8
 Cube.017
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -9189,7 +9189,7 @@ OBJECT poly
 name "Cube.017"
 data 8
 Mesh.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 80
@@ -9735,7 +9735,7 @@ OBJECT poly
 name "Cylinder"
 data 8
 Cylinder
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 168
@@ -10985,7 +10985,7 @@ OBJECT poly
 name "Cylinder.001"
 data 12
 Cylinder.004
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 168
@@ -12235,7 +12235,7 @@ OBJECT poly
 name "Cylinder.007"
 data 12
 Cylinder.008
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -17055,7 +17055,7 @@ OBJECT poly
 name "panel1"
 data 6
 panel1
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 445
@@ -19823,7 +19823,7 @@ OBJECT poly
 name "panel2"
 data 6
 panel2
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 341
@@ -21752,7 +21752,7 @@ OBJECT poly
 name "panel3"
 data 6
 panel3
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 168

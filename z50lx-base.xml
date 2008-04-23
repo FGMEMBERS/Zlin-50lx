@@ -11,7 +11,7 @@
     <fuel-fraction>0.75</fuel-fraction>
 
     <startup>
-      <splash-texture>Aircraft/Zlin-50lx/z50lx-splash.rgb</splash-texture>
+      <splash-texture>Aircraft/Zlin-50lx/z50lx-splash.png</splash-texture>
     </startup>
 
     <sound>
@@ -20,6 +20,9 @@
 
     <model>
       <path archive="y">Aircraft/Zlin-50lx/Models/z50lx.xml</path>
+      <livery>
+        <file type="string">jano</file>
+      </livery>
     </model>
 
     <panel>

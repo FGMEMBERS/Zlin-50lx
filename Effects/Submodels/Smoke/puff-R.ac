@@ -7,7 +7,7 @@ OBJECT poly
 name "puff"
 data 4
 Mesh
-texture "puff-R.rgb"
+texture "puff-R.png"
 texrep 1 1
 crease 61.000000
 numvert 14

@@ -8,7 +8,7 @@ OBJECT poly
 name "centre"
 data 6
 centre
-texture "mag_switch.rgb"
+texture "mag_switch.png"
 texrep 1 1
 crease 30.000000
 numvert 257
@@ -2092,7 +2092,7 @@ OBJECT poly
 name "key"
 data 3
 key
-texture "mag_switch.rgb"
+texture "mag_switch.png"
 texrep 1 1
 crease 45.000000
 numvert 32
@@ -2419,7 +2419,7 @@ OBJECT poly
 name "magsw"
 data 5
 magsw
-texture "mag_switch.rgb"
+texture "mag_switch.png"
 texrep 1 1
 crease 30.000000
 numvert 258
@@ -4415,7 +4415,7 @@ OBJECT poly
 name "start"
 data 5
 start
-texture "mag_switch.rgb"
+texture "mag_switch.png"
 texrep 1 1
 crease 45.000000
 numvert 32

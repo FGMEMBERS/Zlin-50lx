@@ -1728,7 +1728,7 @@ OBJECT poly
 name "Face"
 data 10
 Circle.006
-texture "Turn.rgb"
+texture "Turn.png"
 texrep 1 1
 crease 30.000000
 numvert 42
@@ -2455,7 +2455,7 @@ OBJECT poly
 name "vitre"
 data 5
 vitre
-texture "glass.rgb"
+texture "glass.png"
 texrep 1 1
 crease 30.000000
 numvert 290
