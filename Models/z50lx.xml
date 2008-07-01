@@ -39,6 +39,8 @@
     <object-name>ajout</object-name>
     <object-name>cables</object-name>
     <object-name>antenne</object-name>
+    <object-name>pitot</object-name>
+    <object-name>tourverriere</object-name>
 
     <!-- Objets transparents -->
     <object-name>propdisc</object-name>
@@ -77,6 +79,9 @@
     <object-name>ajout</object-name>
     <object-name>cables</object-name>
     <object-name>antenne</object-name>
+    <object-name>pitot</object-name>
+    <object-name>tourverriere</object-name>
+
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>jano.rgb</texture>
