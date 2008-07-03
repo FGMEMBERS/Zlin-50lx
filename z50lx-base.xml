@@ -21,7 +21,7 @@
     <model>
       <path archive="y">Aircraft/Zlin-50lx/Models/z50lx.xml</path>
       <livery>
-        <file type="string">jano</file>
+        <file type="string">default</file>
       </livery>
     </model>
 
@@ -31,6 +31,14 @@
 
     <multiplay>
       <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
     </multiplay>
 
     <help>
@@ -55,21 +63,7 @@
       <max-lb>200</max-lb>
     </weight>
 
-    <menubar>
-      <default>
-        <menu n="10">
-          <label>Zlin 50 lx</label>
-          <enabled type="bool">true</enabled>
-          <item>
-            <label>Select Livery</label>
-            <binding>
-              <command>nasal</command>
-              <script>aircraft.livery.dialog.toggle()</script>
-          </binding>
-          </item>
-        </menu>
-      </default>
-    </menubar>
+    <menubar include="Gui/z50lx-menu.xml"/>
 
   </sim>
   
@@ -86,6 +80,7 @@
       <file>Aircraft/Zlin-50lx/Nasal/doors.nas</file>
       <file>Aircraft/Zlin-50lx/Nasal/fluids.nas</file>
       <file>Aircraft/Zlin-50lx/Nasal/liveries.nas</file>
+      <file>Aircraft/Zlin-50lx/Nasal/immat.nas</file>
     </z50lx>
   </nasal>
 

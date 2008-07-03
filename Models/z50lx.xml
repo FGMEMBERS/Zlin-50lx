@@ -6,7 +6,7 @@
 
   <nasal>
     <load>
-      var livery_update = aircraft.livery_update.new("Aircraft/Zlinb-50lx/Models/Liveries", 10);
+      var livery_update = aircraft.livery_update.new("Aircraft/Zlin-50lx/Models/Liveries", 10);
     </load>
     <unload>
       livery_update.stop();
@@ -84,8 +84,18 @@
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>jano.rgb</texture>
+    <texture>texture.png</texture>
   </animation>
+
+  <!-- Immatriculation -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Immat/immat.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
 
   <!-- Pilote -->
   <model>
@@ -97,7 +107,7 @@
     </offsets>
   </model>
 
-  <!-- Particules pour OSG -->
+  <!-- Particules pour OSG
   <model>
     <path>Aircraft/Zlin-50lx/Effects/Particles/smoke.xml</path>
     <offsets>
@@ -108,7 +118,7 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model> -->
 
   <!-- Planche de bord -->
   <model>

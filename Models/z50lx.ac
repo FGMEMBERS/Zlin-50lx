@@ -20,7 +20,7 @@ OBJECT poly
 name "aileronD"
 data 8
 aileronD
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -757,7 +757,7 @@ OBJECT poly
 name "aileronG"
 data 8
 aileronG
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -1494,7 +1494,7 @@ OBJECT poly
 name "ailes"
 data 4
 Mesh
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 498
@@ -5022,7 +5022,7 @@ OBJECT poly
 name "ajout"
 data 5
 ajout
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 334
@@ -7358,7 +7358,7 @@ OBJECT poly
 name "antenne"
 data 7
 antenne
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 162
@@ -8730,7 +8730,7 @@ OBJECT poly
 name "axe"
 data 3
 axe
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -8815,7 +8815,7 @@ OBJECT poly
 name "axeA"
 data 4
 axeA
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 172
@@ -9851,7 +9851,7 @@ OBJECT poly
 name "axeD"
 data 4
 axeD
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 28
@@ -10064,7 +10064,7 @@ OBJECT poly
 name "axeG"
 data 4
 axeG
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 28
@@ -10277,7 +10277,7 @@ OBJECT poly
 name "bol"
 data 3
 bol
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 161
@@ -11592,7 +11592,7 @@ OBJECT poly
 name "derive"
 data 6
 derive
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 215
@@ -13323,7 +13323,7 @@ OBJECT poly
 name "direction"
 data 9
 direction
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 165
@@ -14804,7 +14804,7 @@ OBJECT poly
 name "echappe"
 data 7
 echappe
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 130
@@ -15808,7 +15808,7 @@ OBJECT poly
 name "fuselage"
 data 8
 fuselage
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 1090
@@ -25018,7 +25018,7 @@ OBJECT poly
 name "helice"
 data 6
 helice
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 303
@@ -27401,7 +27401,7 @@ OBJECT poly
 name "interieur"
 data 9
 interieur
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 173
@@ -28880,7 +28880,7 @@ OBJECT poly
 name "pitot"
 data 5
 pitot
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -29387,7 +29387,7 @@ OBJECT poly
 name "profondeur"
 data 10
 profondeur
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 434
@@ -33385,7 +33385,7 @@ OBJECT poly
 name "roueA"
 data 5
 roueA
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 802
@@ -39957,7 +39957,7 @@ OBJECT poly
 name "roueD"
 data 5
 roueD
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 802
@@ -46529,7 +46529,7 @@ OBJECT poly
 name "roueG"
 data 5
 roueG
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 802
@@ -53101,7 +53101,7 @@ OBJECT poly
 name "tourverriere"
 data 12
 tourverriere
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 116
@@ -54049,7 +54049,7 @@ OBJECT poly
 name "trimD"
 data 5
 trimD
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -54098,7 +54098,7 @@ OBJECT poly
 name "trimG"
 data 5
 trimG
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -54147,7 +54147,7 @@ OBJECT poly
 name "trimdir"
 data 7
 trimdir
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 41
@@ -54580,7 +54580,7 @@ OBJECT poly
 name "trimprof"
 data 8
 trimprof
-texture "jano.png"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 12
