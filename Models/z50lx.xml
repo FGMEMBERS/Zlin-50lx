@@ -107,7 +107,7 @@
     </offsets>
   </model>
 
-  <!-- Particules pour OSG
+  <!-- Particules pour OSG -->
   <model>
     <path>Aircraft/Zlin-50lx/Effects/Particles/smoke.xml</path>
     <offsets>
@@ -118,7 +118,7 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model> -->
+  </model>
 
   <!-- Planche de bord -->
   <model>
