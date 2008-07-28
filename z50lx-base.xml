@@ -63,7 +63,7 @@
       <max-lb>200</max-lb>
     </weight>
 
-    <menubar include="Gui/z50lx-menu.xml"/>
+    <menubar include="Dialogs/z50lx-menu.xml"/>
 
   </sim>
   
