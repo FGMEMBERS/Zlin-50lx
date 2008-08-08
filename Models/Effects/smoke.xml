@@ -2,53 +2,49 @@
 
 <PropertyList>
 
-  <!-- Particules pour OSG -->
   <particlesystem>
     <name>smoke</name>
 
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.000 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+      <roll-deg>    0.0 </roll-deg>
+      <pitch-deg>   0.0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
     </offsets>
 
     <texture>smoke.png</texture>
 
-    <emissive>false</emissive>
-    <lighting>false</lighting>
-    <align>billboard</align> <!-- billboard / fixed -->
-    
-    <attach>world</attach> <!-- world / local-->
-
-    <placer>
-      <type>point</type> <!-- sector / segments / point -->
-    </placer>
+    <emissive type="bool">false</emissive>
+    <lighting type="bool">false</lighting>
 
     <condition>
       <property>sim/multiplay/generic/int[6]</property>
     </condition>
 
+    <attach>world</attach>
+
+    <placer>
+      <type>point</type>
+    </placer>
+
     <shooter>
-      <theta-min-deg>84</theta-min-deg>
-      <theta-max-deg>86</theta-max-deg>
+      <theta-min-deg>-1.5</theta-min-deg>
+      <theta-max-deg>1.5</theta-max-deg>
       <phi-min-deg>-1.5</phi-min-deg>
       <phi-max-deg>1.5</phi-max-deg>
-      <speed-mps>
+      <speed>
         <value>10</value>
         <spread>2.5</spread>
-      </speed-mps>
+      </speed>
       <rotation-speed>
-<!--                  used wrong tags, and so wasn't functional, hence commented out  [mfranz]
-        <x-min-deg-sec>5</x-min-deg-sec>
-        <y-min-deg-sec>5</y-min-deg-sec>
-        <z-min-deg-sec>5</z-min-deg-sec>
-        <x-max-deg-sec>25</x-max-deg-sec>
-        <y-max-deg-sec>25</y-max-deg-sec>
-        <z-max-deg-sec>25</z-max-deg-sec>
--->
+        <x-min-deg-sec>0</x-min-deg-sec>
+        <y-min-deg-sec>0</y-min-deg-sec>
+        <z-min-deg-sec>0</z-min-deg-sec>
+        <x-max-deg-sec>0</x-max-deg-sec>
+        <y-max-deg-sec>0</y-max-deg-sec>
+        <z-max-deg-sec>0</z-max-deg-sec>
       </rotation-speed>
     </shooter>
 
@@ -58,7 +54,9 @@
         <spread>2.5</spread>
       </particles-per-sec>
     </counter>
-      
+
+    <align>billboard</align>
+
     <particle>
       <start>
         <color>
@@ -93,9 +91,9 @@
     </particle>
       
     <program>
-      <fluid>air</fluid>         <!-- air / water -->
-      <gravity>false</gravity>
-      <wind>false</wind>
+      <fluid>               air  </fluid>
+      <gravity type="bool"> true </gravity>
+      <wind typ="bool">     true </wind>
     </program>
       
   </particlesystem>

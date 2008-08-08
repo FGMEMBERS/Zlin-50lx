@@ -6,7 +6,7 @@
 
   <!-- magnetic compass -->
   <model>
-    <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
     <offsets>
       <x-m> 0.128 </x-m>
       <y-m> 0.000 </y-m>
@@ -16,7 +16,7 @@
 
   <!-- Indicateur de virage -->
   <model>
-    <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Turn/Turn.xml</path>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Turn/Turn.xml</path>
     <offsets>
       <x-m> 0.128 </x-m>
       <y-m> 0.000 </y-m>
@@ -26,7 +26,7 @@
 
   <!-- Pour vol sur le dos -->
   <model>
-    <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Turn/Turn2.xml</path>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Turn/Turn2.xml</path>
     <offsets>
       <x-m> 0.142 </x-m>
       <y-m> 0.000 </y-m>
@@ -36,7 +36,7 @@
 
   <!-- Altimètre -->
   <model>
-    <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Altimeter/Altimeter.xml</path>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Altimeter/Altimeter.xml</path>
     <offsets>
       <x-m>  0.128 </x-m>
       <y-m> -0.181 </y-m>
@@ -46,7 +46,7 @@
 
   <!-- compte tours -->
   <model>
-    <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/RPM/RPM.xml</path>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/RPM/RPM.xml</path>
     <offsets>
       <x-m> 0.128 </x-m>
       <y-m> 0.086 </y-m>
@@ -56,7 +56,7 @@
 
   <!-- Anémomètre -->
   <model>
-    <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/ASI/ASI.xml</path>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/ASI/ASI.xml</path>
     <offsets>
       <x-m>  0.128 </x-m>
       <y-m> -0.181 </y-m>
@@ -66,7 +66,7 @@
 
   <!-- Variomètre -->
   <model>
-    <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/VSI/VSI.xml</path>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/VSI/VSI.xml</path>
     <offsets>
       <x-m>  0.128 </x-m>
       <y-m> -0.092 </y-m>
@@ -76,7 +76,7 @@
 
   <!-- Chronomètre -->
   <model>
-    <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/clock/clock.xml</path>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/clock/clock.xml</path>
     <offsets>
       <x-m>  0.128 </x-m>
       <y-m> -0.092 </y-m>
@@ -86,7 +86,7 @@
 
   <!-- press and temp -->
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/temp-n-press/temp.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/temp-n-press/temp.xml</path>
    <offsets>
       <x-m>  0.128 </x-m>
       <y-m>  0.181 </y-m>
@@ -96,7 +96,7 @@
 
   <!-- manifold pressure -->
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/MPFuel/MPFuel.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/MPFuel/MPFuel.xml</path>
    <offsets>
       <x-m>  0.128 </x-m>
       <y-m>  0.092 </y-m>
@@ -106,7 +106,7 @@
 
   <!-- fuel quantity -->
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/CHT/CHT.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/CHT/CHT.xml</path>
    <offsets>
       <x-m>  0.128 </x-m>
       <y-m>  0.152 </y-m>
@@ -116,7 +116,7 @@
 
   <!-- gmeter -->
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/GMeter/GMeter.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/GMeter/GMeter.xml</path>
    <offsets>
       <x-m>  0.128 </x-m>
       <y-m>  0.212 </y-m>
@@ -126,7 +126,7 @@
 
   <!-- magneto switch -->
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/magneto/mags.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/magneto/mags.xml</path>
    <offsets>
       <x-m>  0.115 </x-m>
       <y-m> -0.202 </y-m>
@@ -136,7 +136,7 @@
 
   <!-- Fusibles -->
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/switch/fusible.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/fusible.xml</path>
    <offsets>
       <x-m>  0.115 </x-m>
       <y-m>  0.198 </y-m>
@@ -145,7 +145,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/switch/fusible.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/fusible.xml</path>
    <offsets>
       <x-m>  0.115 </x-m>
       <y-m>  0.229 </y-m>
@@ -154,7 +154,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/switch/fusible.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/fusible.xml</path>
    <offsets>
       <x-m>  0.115 </x-m>
       <y-m>  0.047 </y-m>
@@ -164,7 +164,7 @@
 
   <!-- Switch -->
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/switch/switch.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/switch.xml</path>
    <offsets>
       <x-m>  0.112 </x-m>
       <y-m> -0.158 </y-m>
@@ -173,7 +173,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/switch/smoke.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/smoke.xml</path>
    <offsets>
       <x-m>  0.112 </x-m>
       <y-m> -0.140 </y-m>
@@ -182,7 +182,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/switch/switch.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/switch.xml</path>
    <offsets>
       <x-m>  0.112 </x-m>
       <y-m> -0.103 </y-m>
@@ -191,7 +191,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/switch/switch.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/switch.xml</path>
    <offsets>
       <x-m>  0.112 </x-m>
       <y-m>  0.096 </y-m>
@@ -200,7 +200,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/switch/switch.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/switch.xml</path>
    <offsets>
       <x-m>  0.112 </x-m>
       <y-m>  0.114 </y-m>
@@ -209,7 +209,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/switch/switch.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/switch.xml</path>
    <offsets>
       <x-m>  0.112 </x-m>
       <y-m>  0.132 </y-m>
@@ -218,7 +218,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/switch/switch.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/switch.xml</path>
    <offsets>
       <x-m>  0.112 </x-m>
       <y-m>  0.149 </y-m>
@@ -227,7 +227,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/switch/switch.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/switch.xml</path>
    <offsets>
       <x-m>  0.112 </x-m>
       <y-m>  0.167 </y-m>
@@ -237,7 +237,7 @@
 
   <!-- Sélecteur de réservoirs -->
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/switch/fuelselect.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/fuelselect.xml</path>
    <offsets>
       <x-m>  0.119 </x-m>
       <y-m> -0.030 </y-m>
@@ -247,7 +247,7 @@
 
   <!-- Les vis -->
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m> -0.215 </y-m>
@@ -259,7 +259,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m> -0.147 </y-m>
@@ -271,7 +271,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m> -0.215 </y-m>
@@ -283,7 +283,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m> -0.147 </y-m>
@@ -295,7 +295,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.051 </y-m>
@@ -307,7 +307,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.119 </y-m>
@@ -319,7 +319,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.051 </y-m>
@@ -331,7 +331,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.119 </y-m>
@@ -343,7 +343,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.147 </y-m>
@@ -355,7 +355,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.215 </y-m>
@@ -367,7 +367,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.147 </y-m>
@@ -379,7 +379,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.215 </y-m>
@@ -391,7 +391,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.129 </x-m>
       <y-m> -0.215 </y-m>
@@ -403,7 +403,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.129 </x-m>
       <y-m> -0.147 </y-m>
@@ -415,7 +415,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.129 </x-m>
       <y-m> -0.147 </y-m>
@@ -427,7 +427,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.129 </x-m>
       <y-m> -0.126 </y-m>
@@ -439,7 +439,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.129 </x-m>
       <y-m> -0.058 </y-m>
@@ -451,7 +451,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.129 </x-m>
       <y-m> -0.058 </y-m>
@@ -463,7 +463,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.070 </y-m>
@@ -475,7 +475,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.112 </y-m>
@@ -487,7 +487,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.070 </y-m>
@@ -499,7 +499,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.112 </y-m>
@@ -511,7 +511,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.131 </y-m>
@@ -523,7 +523,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.173 </y-m>
@@ -535,7 +535,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.131 </y-m>
@@ -547,7 +547,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.173 </y-m>
@@ -559,7 +559,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.191 </y-m>
@@ -571,7 +571,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.233 </y-m>
@@ -583,7 +583,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.130 </x-m>
       <y-m>  0.233 </y-m>
@@ -595,7 +595,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.129 </x-m>
       <y-m> -0.035 </y-m>
@@ -607,7 +607,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.129 </x-m>
       <y-m>  0.034 </y-m>
@@ -619,7 +619,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m> -0.159 </y-m>
@@ -631,7 +631,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m> -0.159 </y-m>
@@ -643,7 +643,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m> -0.141 </y-m>
@@ -655,7 +655,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m> -0.141 </y-m>
@@ -667,7 +667,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m> -0.103 </y-m>
@@ -679,7 +679,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m> -0.103 </y-m>
@@ -691,7 +691,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m>  0.096 </y-m>
@@ -703,7 +703,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m>  0.096 </y-m>
@@ -715,7 +715,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m>  0.114 </y-m>
@@ -727,7 +727,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m>  0.114 </y-m>
@@ -739,7 +739,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m>  0.132 </y-m>
@@ -751,7 +751,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m>  0.132 </y-m>
@@ -763,7 +763,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m>  0.150 </y-m>
@@ -775,7 +775,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m>  0.150 </y-m>
@@ -787,7 +787,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m>  0.167 </y-m>
@@ -799,7 +799,7 @@
   </model>
 
   <model>
-   <path>Aircraft/Zlin-50lx/Models/Panel/Instruments/Objects/vis.xml</path>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/vis.xml</path>
    <offsets>
       <x-m>  0.116 </x-m>
       <y-m>  0.167 </y-m>

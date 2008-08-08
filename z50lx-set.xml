@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
-<!-- <PropertyList include="z50lx-jsbsim-set.xml"> -->
-<PropertyList include="z50lx-yasim-set.xml">
+<!-- <PropertyList include="z50lx-jsbsim-cnf.xml"> -->
+<PropertyList include="z50lx-yasim-cnf.xml">
 
   <sim>
 

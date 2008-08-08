@@ -87,6 +87,16 @@
     <texture>texture.png</texture>
   </animation>
 
+  <!-- Interior -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
+
   <!-- Immatriculation -->
   <model>
     <path>Aircraft/Zlin-50lx/Models/Immat/immat.xml</path>
@@ -97,19 +107,9 @@
     </offsets>
   </model>
 
-  <!-- Pilote -->
-  <model>
-    <path>Aircraft/Zlin-50lx/Models/Pilot/pilot.xml</path>
-    <offsets>
-      <x-m> -0.776 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.060 </z-m>
-    </offsets>
-  </model>
-
   <!-- Particules pour OSG -->
   <model>
-    <path>Aircraft/Zlin-50lx/Effects/Particles/smoke.xml</path>
+    <path>Aircraft/Zlin-50lx/Models/Effects/smoke.xml</path>
     <offsets>
       <x-m>  0.442 </x-m>
       <y-m>  0.000 </y-m>
@@ -117,17 +117,6 @@
       <roll-deg>    0.000 </roll-deg>
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- Planche de bord -->
-  <model>
-    <path>Aircraft/Zlin-50lx/Models/Panel/panel.xml</path>
-    <offsets>
-      <x-m> -1.168 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.140 </z-m>
-      <pitch-deg> 0.000 </pitch-deg>
     </offsets>
   </model>
 
