@@ -4,34 +4,57 @@
 
  <path>GMeter.ac</path>
 
- <animation>
-  <type>material</type>
-  <object-name>Face</object-name>
-  <object-name>gTip</object-name>
-  <emission>
-   <red>1.0</red>
-   <green>0.2</green>
-   <blue>0.0</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
-  </emission>
- </animation>
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>Face</object-name>
+    <object-name>Bezel</object-name>
+    <object-name>gCtr</object-name>
+    <object-name>hour</object-name>
+    <object-name>Reset</object-name>
 
- <animation>
-  <type>rotate</type>
-  <object-name>gTip</object-name>
-  <object-name>gCtr</object-name>
-  <property>/accelerations/pilot-g</property>
-  <factor>22.5</factor>
-  <center>
-   <x-m>0</x-m>
-   <y-m>0</y-m>
-   <z-m>0</z-m>
-  </center>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+    <!-- Objets transparents -->
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass.png</texture>
+    <name>vitre</name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Face</object-name>
+    <object-name>gCtr</object-name>
+    <emission>
+      <red>   1.0 </red>
+      <green> 0.2 </green>
+      <blue>  0.0 </blue>
+      <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>gCtr</object-name>
+    <property>/accelerations/pilot-g</property>
+    <factor>22.5</factor>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
 </PropertyList>

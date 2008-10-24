@@ -4,69 +4,91 @@
 
  <path>temp.ac</path>
 
- <animation>
-  <type>material</type>
-  <object-name>Face</object-name>
-  <object-name>temp.PtrT</object-name>
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>Face</object-name>
+    <object-name>Bezel</object-name>
+    <object-name>temp.PtrT</object-name>
+    <object-name>press1.PtrT</object-name>
+    <object-name>press2.PtrT</object-name>
+    <object-name>pastille1</object-name>
+    <object-name>pastille2</object-name>
+    <object-name>pastille3</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass.png</texture>
+    <name>vitre</name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Face</object-name>
+    <object-name>temp.PtrT</object-name>
+    <object-name>press1.PtrT</object-name>
+    <object-name>press2.PtrT</object-name>
+    <emission>
+      <red>1.0</red>
+      <green>0.2</green>
+      <blue>0.0</blue>
+      <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>temp.PtrT</object-name>
+    <property>/instrumentation/engine/oil-temp</property>
+    <interpolation>
+     <entry><ind>32</ind><dep>0</dep></entry>
+     <entry><ind>248</ind><dep>120</dep></entry>
+    </interpolation>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0.009</z-m>
+    </center>
+  </animation>
+
 <!--
-  <object-name>press1.PtrT</object-name>
-  <object-name>press2.PtrT</object-name>
--->
-  <emission>
-   <red>1.0</red>
-   <green>0.2</green>
-   <blue>0.0</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
-  </emission>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>press1.PtrT</object-name>
+    <property></property>
+    <factor>0.010973</factor>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
 
- <animation>
-  <type>rotate</type>
-  <object-name>temp.PtrT</object-name>
-  <object-name>temp.PtrC</object-name>
-  <property>/instrumentation/engine/oil-temp</property>
-  <interpolation>
-   <entry><ind>32</ind><dep>0</dep></entry>
-   <entry><ind>248</ind><dep>120</dep></entry>
-  </interpolation>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
-  <center>
-   <x-m>0</x-m>
-   <y-m>0</y-m>
-   <z-m>0.009</z-m>
-  </center>
- </animation>
-
-<!--
- <animation>
-  <type>rotate</type>
-  <object-name>press1.PtrT</object-name>
-  <object-name>press1.PtrC</object-name>
-  <property></property>
-  <factor>0.010973</factor>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
-
- <animation>
-  <type>rotate</type>
-  <object-name>press2.PtrT</object-name>
-  <object-name>press2.PtrC</object-name>
-  <property></property>
-  <factor>0.0010973</factor>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>press2.PtrT</object-name>
+    <property></property>
+    <factor>0.0010973</factor>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
 -->
 </PropertyList>
 
