@@ -1,13 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!-- Zlin 50 lx
      3D model by Emmanuel BARANGER
-     FDM by Pierre GEOFFROY -->
+     FDM by Pierre GEOFFROY 
+-->
 
 <airplane mass="1254">
-
-  <!-- Pilot -->
-  <weight 
-     x="0.475" y="0" z="0.057" 
-     mass-prop="/sim/weight[0]/weight-lb"/>
 
   <!-- Approach configuration -->
   <approach speed="59" aoa="10" fuel="0.2">
@@ -144,6 +142,9 @@
   <tank x="1.9" y="0" z="-0.02" capacity="95" />
   <tank x="0.981" y="1.043" z="-0.410" capacity="79.2" />
   <tank x="0.981" y="-1.043" z="-0.410" capacity="79.2" />
+
+  <!-- Pilot -->
+  <weight x="0.475" y="0" z="0.057" mass-prop="/sim/weight[0]/weight-lb"/>
 
   <!-- Mass distribution
        CG théorique x=0.961 y=0.0 z=-0.510
