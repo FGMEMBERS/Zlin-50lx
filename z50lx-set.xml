@@ -6,7 +6,7 @@
   <sim>
 
     <description>Zlin 50 lx</description>
-    <author>Emmanuel BARANGER (3D), Pierre GEOFFROY (FDM), Sébatien MARQUE (Panel), Laurent HAYVEL (Texture)</author>
+    <author>Emmanuel BARANGER (3D), Pierre GEOFFROY (FDM), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture)</author>
 
     <submodels>
       <serviceable type="bool">true</serviceable>
