@@ -4,7 +4,7 @@
 
   <sim include="Nasal/views.xml">
 
-    <author>Emmanuel BARANGER (3D), Pierre GEOFFROY (FDM), Sébatien MARQUE (Panel), Laurent HAYVEL (Texture)</author>
+    <author>Emmanuel BARANGER (3D), Pierre GEOFFROY (FDM), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
 
