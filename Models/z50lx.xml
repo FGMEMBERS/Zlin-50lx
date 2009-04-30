@@ -129,9 +129,9 @@
   <model>
     <path>Aircraft/Zlin-50lx/Models/Interior/interior.xml</path>
     <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 
@@ -139,9 +139,9 @@
   <model>
     <path>Aircraft/Zlin-50lx/Models/Immat/immat.xml</path>
     <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 
@@ -152,9 +152,9 @@
       <x-m>  0.442 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -0.383 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -173,7 +173,7 @@
     <object-name>propdisc</object-name>
     <condition>
       <greater-than>
-        <property>engines/engine[0]/rpm</property>
+        <property>/engines/engine[0]/rpm</property>
         <value>1500</value>
       </greater-than>
     </condition>
@@ -185,11 +185,11 @@
     <condition>
     <and>
       <greater-than>
-        <property>engines/engine[0]/rpm</property>
+        <property>/engines/engine[0]/rpm</property>
         <value>600.000</value>
       </greater-than>
       <less-than>
-        <property>engines/engine[0]/rpm</property>
+        <property>/engines/engine[0]/rpm</property>
         <value>1500.001</value>
       </less-than>
     </and>
@@ -201,7 +201,7 @@
     <object-name>helice</object-name>
     <condition>
       <less-than>
-        <property>engines/engine[0]/rpm</property>
+        <property>/engines/engine[0]/rpm</property>
 	<value>1500</value>
       </less-than>
     </condition>
@@ -210,7 +210,7 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceComplete</object-name>
-    <property>engines/engine[0]/rpm</property>
+    <property>/engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
       <x-m> -3.045 </x-m>
@@ -218,18 +218,29 @@
       <z-m> -0.019 </z-m>
     </center>
     <axis>
-      <x> -1.000 </x>
-      <y>  0.000 </y>
-      <z>  0.000 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
   <!-- Animations des ailerons -->
   <animation>
-    <type>rotate</type>
+    <name>AileronGComplet</name>
     <object-name>aileronG</object-name>
     <object-name>trimG</object-name>
-    <property>surface-positions/left-aileron-pos-norm</property>
+  </animation>
+
+  <animation>
+    <name>AileronDComplet</name>
+    <object-name>aileronD</object-name>
+    <object-name>trimD</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AileronGComplet</object-name>
+    <property>/surface-positions/left-aileron-pos-norm</property>
     <factor>-20.0</factor>
     <axis>
       <x1-m> -0.581 </x1-m>
@@ -243,9 +254,8 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>aileronD</object-name>
-    <object-name>trimD</object-name>
-    <property>surface-positions/right-aileron-pos-norm</property>
+    <object-name>AileronDComplet</object-name>
+    <property>/surface-positions/right-aileron-pos-norm</property>
     <factor>-20.0</factor>
     <axis>
       <x1-m> -0.730 </x1-m>
@@ -259,10 +269,15 @@
 
   <!-- Gouverne de profondeur -->
   <animation>
-    <type>rotate</type>
+    <name>ProfComplete</name>
     <object-name>profondeur</object-name>
     <object-name>trimprof</object-name>
-    <property>controls/flight/elevator</property>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>ProfComplete</object-name>
+    <property>/controls/flight/elevator</property>
     <factor>15</factor>
     <center>
       <x-m> 2.573 </x-m>
@@ -270,9 +285,9 @@
       <z-m> 0.401 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -286,7 +301,7 @@
   <animation>
     <type>rotate</type>
     <object-name>GouverneDirection</object-name>
-    <property>controls/flight/rudder</property>
+    <property>/controls/flight/rudder</property>
     <factor>25</factor>
     <axis>
       <x1-m>  2.521 </x1-m>
@@ -308,20 +323,11 @@
   <animation>
     <type>rotate</type>
     <object-name>EnsembleG</object-name>
-    <property>gear/gear[0]/compression-norm</property>
+    <property>/gear/gear[0]/compression-norm</property>
     <interpolation>
-      <entry>
-        <ind>  0.000 </ind>
-        <dep> 20.000 </dep>
-      </entry>
-      <entry>
-        <ind> 0.5 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>   1.0 </ind>
-        <dep> -20.0 </dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep>  20 </dep></entry>
+      <entry><ind> 0.5 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -10 </dep></entry>
     </interpolation>
     <center>
       <x-m> -1.784 </x-m>
@@ -329,9 +335,9 @@
       <z-m> -0.528 </z-m>
     </center>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -344,20 +350,11 @@
   <animation>
     <type>rotate</type>
     <object-name>EnsembleD</object-name>
-    <property>gear/gear[1]/compression-norm</property>
+    <property>/gear/gear[1]/compression-norm</property>
     <interpolation>
-      <entry>
-        <ind>   0.000 </ind>
-        <dep> -20.000 </dep>
-      </entry>
-      <entry>
-        <ind> 0.5 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>  1.0 </ind>
-        <dep> 10.0 </dep>
-      </entry>
+      <entry><ind> 0.0 </ind><dep> -20 </dep></entry>
+      <entry><ind> 0.5 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  10 </dep></entry>
     </interpolation>
     <center>
       <x-m> -1.784 </x-m>
@@ -365,9 +362,9 @@
       <z-m> -0.528 </z-m>
     </center>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -375,7 +372,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueG</object-name>
-    <property>gear/gear[0]/rollspeed-ms</property>
+    <property>/gear/gear[0]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -1.968 </x-m>
@@ -383,16 +380,16 @@
       <z-m> -1.088 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
   <animation>
     <type>spin</type>
     <object-name>roueD</object-name>
-    <property>gear/gear[1]/rollspeed-ms</property>
+    <property>/gear/gear[1]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -1.968 </x-m>
@@ -400,16 +397,16 @@
       <z-m> -1.088 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
   <animation>
     <type>spin</type>
     <object-name>roueA</object-name>
-    <property>gear/gear[2]/rollspeed-ms</property>
+    <property>/gear/gear[2]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m>  3.099 </x-m>
@@ -417,9 +414,9 @@
       <z-m> -0.476 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -432,7 +429,7 @@
   <animation>
     <type>rotate</type>
     <object-name>Canopy</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>/instrumentation/doors/crew/position-norm</property>
     <factor>-95</factor>
     <axis>
       <x1-m> -1.059 </x1-m>
