@@ -40,7 +40,6 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>PointerCentre</object-name>
     <object-name>PointerTip</object-name>
     <property>engines/engine[0]/rpm</property>
     <interpolation>

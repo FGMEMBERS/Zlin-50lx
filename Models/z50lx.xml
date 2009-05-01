@@ -173,7 +173,7 @@
     <object-name>propdisc</object-name>
     <condition>
       <greater-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>1500</value>
       </greater-than>
     </condition>
@@ -185,11 +185,11 @@
     <condition>
     <and>
       <greater-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>600.000</value>
       </greater-than>
       <less-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>1500.001</value>
       </less-than>
     </and>
@@ -201,7 +201,7 @@
     <object-name>helice</object-name>
     <condition>
       <less-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
 	<value>1500</value>
       </less-than>
     </condition>
@@ -210,7 +210,7 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceComplete</object-name>
-    <property>/engines/engine[0]/rpm</property>
+    <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
       <x-m> -3.045 </x-m>
