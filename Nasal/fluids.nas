@@ -33,6 +33,16 @@ update_temp = func {
         interpolate("/instrumentation/engine/oil-temp", getprop("/environment/temperature-degf"), 1000);
     }
     settimer(update_temp,0);
+    setprop("/instrumentation/nav[0]/radials/selected-deg", int(getprop("/instrumentation/kcs55/ki525/selected-course-deg")));
+    setprop("/autopilot/settings/heading-bug-deg", getprop("/instrumentation/kcs55/ki525/selected-heading-deg"));
+    setprop("/consumables/fuel/tank[0]/level-liters", getprop("/consumables/fuel/tank[0]/level-gal_us") / 0.264);
+    setprop("/consumables/fuel/tank[0]/level-lbs", getprop("/consumables/fuel/tank[0]/level-gal_us") * getprop("/consumables/fuel/tank[0]/density-ppg")); 
+
+    setprop("/consumables/fuel/tank[1]/level-liters", getprop("/consumables/fuel/tank[1]/level-gal_us") / 0.264);
+    setprop("/consumables/fuel/tank[1]/level-lbs", getprop("/consumables/fuel/tank[1]/level-gal_us") * getprop("/consumables/fuel/tank[0]/density-ppg")); 
+
+    setprop("/consumables/fuel/tank[2]/level-liters", getprop("/consumables/fuel/tank[2]/level-gal_us") / 0.264);
+    setprop("/consumables/fuel/tank[2]/level-lbs", getprop("/consumables/fuel/tank[2]/level-gal_us") * getprop("/consumables/fuel/tank[0]/density-ppg")); 
 }
 
 setlistener("/sim/signals/fdm-initialized",initialize);

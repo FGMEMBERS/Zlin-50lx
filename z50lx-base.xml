@@ -81,6 +81,7 @@
       <file>Aircraft/Zlin-50lx/Nasal/fluids.nas</file>
       <file>Aircraft/Zlin-50lx/Nasal/liveries.nas</file>
       <file>Aircraft/Zlin-50lx/Nasal/immat.nas</file>
+      <file>Aircraft/Zlin-50lx/Nasal/light.nas</file>
     </z50lx>
   </nasal>
 
