@@ -20,7 +20,9 @@ var initialize = func {
     setprop("/instrumentation/engine/cht-degf",oatf);
 
     #settimer(update_press, 0);
-    settimer(update_temp,0);
+    settimer(update_temp, 0);
+    if (getprop("/sim/model/path") == "Aircraft/Zlin-50lx/Models/z50lx-IFR.xml")
+	settimer(update_IFRspecs, 0);
     print ("fluids system initialized");
 }
 
@@ -33,16 +35,23 @@ update_temp = func {
         interpolate("/instrumentation/engine/oil-temp", getprop("/environment/temperature-degf"), 1000);
     }
     settimer(update_temp,0);
+}
+
+update_IFRspecs = func {
     setprop("/instrumentation/nav[0]/radials/selected-deg", int(getprop("/instrumentation/kcs55/ki525/selected-course-deg")));
     setprop("/autopilot/settings/heading-bug-deg", getprop("/instrumentation/kcs55/ki525/selected-heading-deg"));
+
+    var density_ppg = getprop("/consumables/fuel/tank[0]/density-ppg");
+
     setprop("/consumables/fuel/tank[0]/level-liters", getprop("/consumables/fuel/tank[0]/level-gal_us") / 0.264);
-    setprop("/consumables/fuel/tank[0]/level-lbs", getprop("/consumables/fuel/tank[0]/level-gal_us") * getprop("/consumables/fuel/tank[0]/density-ppg")); 
+    setprop("/consumables/fuel/tank[0]/level-lbs", getprop("/consumables/fuel/tank[0]/level-gal_us") * density_ppg); 
 
     setprop("/consumables/fuel/tank[1]/level-liters", getprop("/consumables/fuel/tank[1]/level-gal_us") / 0.264);
-    setprop("/consumables/fuel/tank[1]/level-lbs", getprop("/consumables/fuel/tank[1]/level-gal_us") * getprop("/consumables/fuel/tank[0]/density-ppg")); 
+    setprop("/consumables/fuel/tank[1]/level-lbs", getprop("/consumables/fuel/tank[1]/level-gal_us") * density_ppg); 
 
     setprop("/consumables/fuel/tank[2]/level-liters", getprop("/consumables/fuel/tank[2]/level-gal_us") / 0.264);
-    setprop("/consumables/fuel/tank[2]/level-lbs", getprop("/consumables/fuel/tank[2]/level-gal_us") * getprop("/consumables/fuel/tank[0]/density-ppg")); 
+    setprop("/consumables/fuel/tank[2]/level-lbs", getprop("/consumables/fuel/tank[2]/level-gal_us") * density_ppg); 
+    settimer(update_IFRspecs, 0);
 }
 
 setlistener("/sim/signals/fdm-initialized",initialize);
