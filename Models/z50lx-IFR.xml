@@ -7,9 +7,23 @@
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Zlin-50lx/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
     </load>
+
     <unload>
       livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
     </unload>
   </nasal>
 
@@ -19,13 +33,9 @@
     <object-name>ailes</object-name>
     <object-name>axe</object-name>
     <object-name>axeG</object-name>
-    <object-name>roueG</object-name>
     <object-name>axeD</object-name>
-    <object-name>roueD</object-name>
     <object-name>axeA</object-name>
-    <object-name>roueA</object-name>
     <object-name>bol</object-name>
-    <object-name>helice</object-name>
     <object-name>aileronG</object-name>
     <object-name>trimG</object-name>
     <object-name>aileronD</object-name>
@@ -35,28 +45,20 @@
     <object-name>trimprof</object-name>
     <object-name>direction</object-name>
     <object-name>trimdir</object-name>
-    <object-name>echappe</object-name>
     <object-name>ajout</object-name>
-    <object-name>cables</object-name>
     <object-name>antenne</object-name>
     <object-name>pitot</object-name>
     <object-name>tourverriere</object-name>
 
+    <object-name>roueA</object-name>
+    <object-name>roueD</object-name>
+    <object-name>roueG</object-name>
+    <object-name>helice</object-name>
+    <object-name>echappe</object-name>
+    <object-name>cables</object-name>
+    <object-name>trous</object-name>
+
     <!-- Objets transparents -->
-    <object-name>propdisc</object-name>
-    <object-name>propblur</object-name>
-    <object-name>verriere</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
-    <object-name>verriere</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
     <object-name>verriere</object-name>
@@ -68,13 +70,9 @@
     <object-name>ailes</object-name>
     <object-name>axe</object-name>
     <object-name>axeG</object-name>
-    <object-name>roueG</object-name>
     <object-name>axeD</object-name>
-    <object-name>roueD</object-name>
     <object-name>axeA</object-name>
-    <object-name>roueA</object-name>
     <object-name>bol</object-name>
-    <object-name>helice</object-name>
     <object-name>aileronG</object-name>
     <object-name>trimG</object-name>
     <object-name>aileronD</object-name>
@@ -84,12 +82,18 @@
     <object-name>trimprof</object-name>
     <object-name>direction</object-name>
     <object-name>trimdir</object-name>
-    <object-name>echappe</object-name>
     <object-name>ajout</object-name>
-    <object-name>cables</object-name>
     <object-name>antenne</object-name>
     <object-name>pitot</object-name>
     <object-name>tourverriere</object-name>
+
+    <object-name>roueA</object-name>
+    <object-name>roueD</object-name>
+    <object-name>roueG</object-name>
+    <object-name>helice</object-name>
+    <object-name>echappe</object-name>
+    <object-name>cables</object-name>
+    <object-name>trous</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -124,6 +128,102 @@
     </shininess>
 -->
   </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>axe</object-name>
+    <object-name>axeG</object-name>
+    <object-name>axeD</object-name>
+    <object-name>axeA</object-name>
+    <object-name>bol</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>trimG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>trimD</object-name>
+    <object-name>derive</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>trimprof</object-name>
+    <object-name>direction</object-name>
+    <object-name>trimdir</object-name>
+    <object-name>ajout</object-name>
+    <object-name>antenne</object-name>
+    <object-name>pitot</object-name>
+    <object-name>tourverriere</object-name>
+  </effect>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>verriere</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+    <object-name>verriere</object-name>
+  </animation>
+
+  <!-- Cranking effects -->
+  <!-- Left -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.269 </x-m>
+      <y-m> -0.286 </y-m>
+      <z-m> -0.133 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  80 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.269 </x-m>
+      <y-m>  0.286 </y-m>
+      <z-m> -0.133 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  80 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Effets sur le sol -->
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -1.968 </x-m>
+      <y-m> -1.118 </y-m>
+      <z-m> -1.410 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue droite -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -1.968 </x-m>
+      <y-m>  1.118 </y-m>
+      <z-m> -1.410 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roulette de queue -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <x-m>  3.099 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.650 </z-m>
+    </offsets>
+  </model>
 
   <!-- Interior -->
   <model>
@@ -240,8 +340,8 @@
   <animation>
     <type>rotate</type>
     <object-name>AileronGComplet</object-name>
-    <property>/surface-positions/left-aileron-pos-norm</property>
-    <factor>-20.0</factor>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> -20 </factor>
     <axis>
       <x1-m> -0.581 </x1-m>
       <y1-m> -1.038 </y1-m>
@@ -255,8 +355,8 @@
   <animation>
     <type>rotate</type>
     <object-name>AileronDComplet</object-name>
-    <property>/surface-positions/right-aileron-pos-norm</property>
-    <factor>-20.0</factor>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> -20 </factor>
     <axis>
       <x1-m> -0.730 </x1-m>
       <y1-m>  4.197 </y1-m>
@@ -277,8 +377,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ProfComplete</object-name>
-    <property>/controls/flight/elevator</property>
-    <factor>15</factor>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 15 </factor>
     <center>
       <x-m> 2.573 </x-m>
       <y-m> 0.000 </y-m>
@@ -301,8 +401,8 @@
   <animation>
     <type>rotate</type>
     <object-name>GouverneDirection</object-name>
-    <property>/controls/flight/rudder</property>
-    <factor>25</factor>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 25 </factor>
     <axis>
       <x1-m>  2.521 </x1-m>
       <y1-m>  0.000 </y1-m>

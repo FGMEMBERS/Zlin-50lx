@@ -17,7 +17,7 @@
    <desc>Canopy</desc>
    <binding>
     <command>nasal</command>
-    <script>z50lx.doorsystem.crewexport();</script>
+    <script>doors.doorsystem.crewexport();</script>
    </binding>
   </key>
 

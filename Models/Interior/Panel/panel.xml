@@ -4,6 +4,16 @@
 
   <path>panel.ac</path>
 
+  <!-- Fiche de voltige -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/fichesvoltige/fiche.xml</path>
+    <offsets>
+      <x-m> 0.136 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.104 </z-m>
+    </offsets>
+  </model>
+
   <!-- magnetic compass -->
   <model>
     <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
