@@ -4,6 +4,7 @@
      3D model by Emmanuel BARANGER
      FDM by Pierre GEOFFROY 
      2011 updated with Melchior's script by BARANGER Emmanuel
+     09-2011 updated by OO ZVY
 
      sources : http://en.wikipedia.org/wiki/Zl%C3%ADn_Z_50
 
@@ -68,13 +69,13 @@
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
   </hstab>
 
-  <vstab x="-2.430" y="0" z="-0.095" 
-         taper="0.23" 
-         length="1.575" 
-         chord="1.666" 
+  <vstab x="-2.430" y="0" z="-0.095"
+         taper="0.23"
+         length="1.575"
+         chord="1.666"
          sweep="15">
          <stall aoa="18" width="4" peak="1.5"/>
-         <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
+         <flap0 start="0" end="1" lift="3" drag="1.2"/>
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
@@ -142,12 +143,12 @@
   </gear>
 
   <!-- Tail wheel -->
-  <gear x="-3.099" y="0" z="-0.650" 
+  <gear x="-3.099" y="0" z="-0.650"
         compression="0.2"
         spring="0.8"
         on-solid="1"
         sfric="1"
-        dfric="1">
+        dfric="0.5">
         <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="0.5" dst1="-0.5"/>
   </gear>
 

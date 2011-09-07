@@ -5,8 +5,17 @@
   <sim>
 
     <description>Zlin 50 lx (YASim)</description>
+    <author>Emmanuel BARANGER (3D), Pierre GEOFFROY (FDM), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture)</author>
     <flight-model archive="y">yasim</flight-model>
     <aero archive="y">z50lx-yasim</aero>
+
+    <model>
+      <path archive="y">Aircraft/Zlin-50lx/Models/z50lx.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <hide-fiche type="bool"> 0 </hide-fiche>
+    </model>
 
   </sim>
 
