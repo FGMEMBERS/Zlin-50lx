@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
  
 <PropertyList>
 
@@ -6,7 +6,7 @@
  
     <crank>
       <name>engstart</name>
-      <path>Sounds/engstart.wav</path>
+      <path>Aircraft/Zlin-50lx/Sounds/start.wav</path>
       <property>/engines/engine/cranking</property>
       <volume>
         <offset>0.4</offset>
@@ -46,7 +46,7 @@
     <engine>
       <name>engine</name>
       <mode>looped</mode>
-      <path>Aircraft/Zlin-50lx/Sounds/Zlin50-engine-out.wav</path>
+      <path>Aircraft/Zlin-50lx/Sounds/engine.wav</path>
       <property>/engines/engine/running</property>
       <volume>
         <property>/engines/engine/mp-osi</property>
@@ -79,7 +79,7 @@
     <propeller>
       <name>propeller</name>
       <mode>looped</mode>
-      <path>Aircraft/Zlin-50lx/Sounds/ZLin-prop1.wav</path>
+      <path>Aircraft/Zlin-50lx/Sounds/propeller.wav</path>
       <property>/engines/engine/running</property>
       <volume>
         <property>/orientation/alpha-deg</property>

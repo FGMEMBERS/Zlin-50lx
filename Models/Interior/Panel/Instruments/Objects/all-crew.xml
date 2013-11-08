@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Les vis -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m> -0.215 </y-m>
+      <z-m>  0.139 </z-m>
+      <roll-deg> 45 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m> -0.147 </y-m>
+      <z-m>  0.139 </z-m>
+      <roll-deg> -30 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m> -0.215 </y-m>
+      <z-m>  0.071 </z-m>
+      <roll-deg> 112 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m> -0.147 </y-m>
+      <z-m>  0.071 </z-m>
+      <roll-deg> -15 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.143 </z-m>
+      <roll-deg> -100 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.119 </y-m>
+      <z-m>  0.143 </z-m>
+      <roll-deg> 42 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m>  0.075 </z-m>
+      <roll-deg> -38 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.119 </y-m>
+      <z-m>  0.075 </z-m>
+      <roll-deg> 210 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.147 </y-m>
+      <z-m>  0.138 </z-m>
+      <roll-deg> 48 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.215 </y-m>
+      <z-m>  0.138 </z-m>
+      <roll-deg> -20 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.147 </y-m>
+      <z-m>  0.069 </z-m>
+      <roll-deg> 55 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.215 </y-m>
+      <z-m>  0.069 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.129 </x-m>
+      <y-m> -0.215 </y-m>
+      <z-m>  0.050 </z-m>
+      <roll-deg> -15 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.129 </x-m>
+      <y-m> -0.147 </y-m>
+      <z-m>  0.050 </z-m>
+      <roll-deg> 32 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.129 </x-m>
+      <y-m> -0.147 </y-m>
+      <z-m> -0.018 </z-m>
+      <roll-deg>  8 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.129 </x-m>
+      <y-m> -0.126 </y-m>
+      <z-m>  0.050 </z-m>
+      <roll-deg> -50 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.129 </x-m>
+      <y-m> -0.058 </y-m>
+      <z-m>  0.050 </z-m>
+      <roll-deg> 65 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.129 </x-m>
+      <y-m> -0.058 </y-m>
+      <z-m> -0.018 </z-m>
+      <roll-deg> 40 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.070 </y-m>
+      <z-m>  0.043 </z-m>
+      <roll-deg> -13 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.112 </y-m>
+      <z-m>  0.043 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.070 </y-m>
+      <z-m> -0.013 </z-m>
+      <roll-deg> 14 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.112 </y-m>
+      <z-m> -0.013 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.131 </y-m>
+      <z-m>  0.043 </z-m>
+      <roll-deg> 67 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.173 </y-m>
+      <z-m>  0.043 </z-m>
+      <roll-deg> 5 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.131 </y-m>
+      <z-m> -0.013 </z-m>
+      <roll-deg> -3 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.173 </y-m>
+      <z-m> -0.013 </z-m>
+      <roll-deg> 22 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.191 </y-m>
+      <z-m>  0.043 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.233 </y-m>
+      <z-m>  0.043 </z-m>
+      <roll-deg> 8 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.130 </x-m>
+      <y-m>  0.233 </y-m>
+      <z-m> -0.013 </z-m>
+      <roll-deg> -7 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.129 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m> -0.026 </z-m>
+      <roll-deg> 27 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.129 </x-m>
+      <y-m>  0.034 </y-m>
+      <z-m> -0.026 </z-m>
+      <roll-deg> 6 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m> -0.159 </y-m>
+      <z-m> -0.063 </z-m>
+      <roll-deg> 76 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m> -0.159 </y-m>
+      <z-m> -0.100 </z-m>
+      <roll-deg> 24 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m> -0.141 </y-m>
+      <z-m> -0.063 </z-m>
+      <roll-deg> 4 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m> -0.141 </y-m>
+      <z-m> -0.100 </z-m>
+      <roll-deg> 67 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m> -0.103 </y-m>
+      <z-m> -0.063 </z-m>
+      <roll-deg> -24 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m> -0.103 </y-m>
+      <z-m> -0.100 </z-m>
+      <roll-deg> -9 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m>  0.096 </y-m>
+      <z-m> -0.063 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m>  0.096 </y-m>
+      <z-m> -0.100 </z-m>
+      <roll-deg> 47 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m>  0.114 </y-m>
+      <z-m> -0.063 </z-m>
+      <roll-deg> 95 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m>  0.114 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m>  0.132 </y-m>
+      <z-m> -0.063 </z-m>
+      <roll-deg> 45 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m>  0.132 </y-m>
+      <z-m> -0.100 </z-m>
+      <roll-deg> -2 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m>  0.150 </y-m>
+      <z-m> -0.063 </z-m>
+      <roll-deg> 33 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m>  0.150 </y-m>
+      <z-m> -0.100 </z-m>
+      <roll-deg> 12 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m>  0.167 </y-m>
+      <z-m> -0.063 </z-m>
+      <roll-deg> 5 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/crew.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m>  0.167 </y-m>
+      <z-m> -0.100 </z-m>
+      <roll-deg> -15 </roll-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

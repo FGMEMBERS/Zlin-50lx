@@ -31,32 +31,34 @@
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
-    <object-name>axe</object-name>
-    <object-name>axeG</object-name>
-    <object-name>axeD</object-name>
-    <object-name>axeA</object-name>
-    <object-name>bol</object-name>
     <object-name>aileronG</object-name>
     <object-name>trimG</object-name>
     <object-name>aileronD</object-name>
     <object-name>trimD</object-name>
     <object-name>derive</object-name>
+    <object-name>ailes2</object-name>
     <object-name>profondeur</object-name>
     <object-name>trimprof</object-name>
     <object-name>direction</object-name>
     <object-name>trimdir</object-name>
+    <object-name>bol</object-name>
     <object-name>ajout</object-name>
     <object-name>antenne</object-name>
     <object-name>pitot</object-name>
     <object-name>tourverriere</object-name>
+    <object-name>montants</object-name>
 
-    <object-name>roueA</object-name>
-    <object-name>roueD</object-name>
+    <object-name>trous</object-name>
+    <object-name>axe</object-name>
+    <object-name>axeG</object-name>
     <object-name>roueG</object-name>
+    <object-name>axeD</object-name>
+    <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
+    <object-name>roueA</object-name>
     <object-name>helice</object-name>
     <object-name>echappe</object-name>
     <object-name>cables</object-name>
-    <object-name>trous</object-name>
 
     <!-- Objets transparents -->
     <object-name>propdisc</object-name>
@@ -68,89 +70,98 @@
     <type>material</type>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
-    <object-name>axe</object-name>
-    <object-name>axeG</object-name>
-    <object-name>axeD</object-name>
-    <object-name>axeA</object-name>
-    <object-name>bol</object-name>
     <object-name>aileronG</object-name>
     <object-name>trimG</object-name>
     <object-name>aileronD</object-name>
     <object-name>trimD</object-name>
     <object-name>derive</object-name>
+    <object-name>ailes2</object-name>
     <object-name>profondeur</object-name>
     <object-name>trimprof</object-name>
     <object-name>direction</object-name>
     <object-name>trimdir</object-name>
+    <object-name>bol</object-name>
     <object-name>ajout</object-name>
     <object-name>antenne</object-name>
     <object-name>pitot</object-name>
     <object-name>tourverriere</object-name>
+    <object-name>montants</object-name>
 
-    <object-name>roueA</object-name>
-    <object-name>roueD</object-name>
+    <object-name>trous</object-name>
+    <object-name>axe</object-name>
+    <object-name>axeG</object-name>
     <object-name>roueG</object-name>
+    <object-name>axeD</object-name>
+    <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
+    <object-name>roueA</object-name>
     <object-name>helice</object-name>
     <object-name>echappe</object-name>
     <object-name>cables</object-name>
-    <object-name>trous</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
     <emission>
       <red-prop>emission/red</red-prop>
       <green-prop>emission/green</green-prop>
       <blue-prop>emission/blue</blue-prop>
     </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
-    <object-name>axe</object-name>
-    <object-name>axeG</object-name>
-    <object-name>axeD</object-name>
-    <object-name>axeA</object-name>
-    <object-name>bol</object-name>
     <object-name>aileronG</object-name>
     <object-name>trimG</object-name>
     <object-name>aileronD</object-name>
     <object-name>trimD</object-name>
     <object-name>derive</object-name>
+    <object-name>ailes2</object-name>
     <object-name>profondeur</object-name>
     <object-name>trimprof</object-name>
     <object-name>direction</object-name>
     <object-name>trimdir</object-name>
+    <object-name>bol</object-name>
     <object-name>ajout</object-name>
     <object-name>antenne</object-name>
     <object-name>pitot</object-name>
     <object-name>tourverriere</object-name>
+    <object-name>montants</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Effects/model-combined-deferred</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>trimG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>trimD</object-name>
+    <object-name>derive</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>trimprof</object-name>
+    <object-name>direction</object-name>
+    <object-name>trimdir</object-name>
+    <object-name>bol</object-name>
+    <object-name>ajout</object-name>
+    <object-name>antenne</object-name>
+    <object-name>pitot</object-name>
+    <object-name>tourverriere</object-name>
+    <object-name>montants</object-name>
   </effect>
 
   <animation>
@@ -167,10 +178,25 @@
     <object-name>verriere</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+    <object-name>verriere</object-name>
+  </effect>
+
   <!-- Une ombre pour OSG  -->
   <model>
-    <name>shadowOSG</name>
     <path>Aircraft/Zlin-50lx/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.00 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m> -1.00 </z-m>
+    </offsets>
   </model>
 
   <!-- Cranking effects -->
@@ -181,9 +207,7 @@
       <x-m> -2.269 </x-m>
       <y-m> -0.286 </y-m>
       <z-m> -0.133 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg>  80 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -194,9 +218,7 @@
       <x-m> -2.269 </x-m>
       <y-m>  0.286 </y-m>
       <z-m> -0.133 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg>  80 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -248,9 +270,6 @@
       <x-m>  0.442 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -0.383 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -306,6 +325,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceComplete</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value> 5 </value>
+      </greater-than>
+    </condition>
     <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -523,9 +548,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>Canopy</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
     <type>rotate</type>
     <object-name>Canopy</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>/sim/multiplay/generic/float[0]</property>
     <factor> -95 </factor>
     <axis>
       <x1-m> -1.059 </x1-m>
@@ -539,62 +578,11 @@
 
   <!-- Ajout des effets lumineux -->
   <model>
-    <path>Aircraft/Zlin-50lx/Models/Lights/GreenLight.xml</path>
-    <offsets>
-      <x-m> -1.429 </x-m>
-      <y-m> -4.303 </y-m>
-      <z-m> -0.221 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Zlin-50lx/Models/Lights/StrobeWhite.xml</path>
-    <offsets>
-      <x-m> -1.329 </x-m>
-      <y-m> -4.303 </y-m>
-      <z-m> -0.220 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Zlin-50lx/Models/Lights/RedLight.xml</path>
-    <offsets>
-      <x-m> -1.429 </x-m>
-      <y-m>  4.303 </y-m>
-      <z-m> -0.221 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Zlin-50lx/Models/Lights/StrobeWhite.xml</path>
-    <offsets>
-      <x-m> -1.329 </x-m>
-      <y-m>  4.303 </y-m>
-      <z-m> -0.220 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model>
-
-  <model>
     <path>Aircraft/Zlin-50lx/Models/Lights/beacon.xml</path>
     <offsets>
       <x-m> -0.521 </x-m>
-      <y-m>  0 </y-m>
+      <y-m>  0.000 </y-m>
       <z-m> -0.511 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -604,11 +592,43 @@
       <x-m> -2.522 </x-m>
       <y-m>  0.001 </y-m>
       <z-m> -0.506 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -1.429 </x-m>
+      <y-m> -4.303 </y-m>
+      <z-m> -0.221 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -1.329 </x-m>
+      <y-m> -4.303 </y-m>
+      <z-m> -0.220 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Lights/RedLight.xml</path>
+    <offsets>
+      <x-m> -1.429 </x-m>
+      <y-m>  4.303 </y-m>
+      <z-m> -0.221 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -1.329 </x-m>
+      <y-m>  4.303 </y-m>
+      <z-m> -0.220 </z-m>
     </offsets>
   </model>
 
 </PropertyList>
-

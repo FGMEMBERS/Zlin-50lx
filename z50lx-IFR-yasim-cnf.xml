@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList include="z50lx-base.xml">
 
@@ -14,18 +14,36 @@
       <livery>
         <file type="string">default</file>
       </livery>
-      <instrument-lighting>
-        <emission>
-          <red>   1.0 </red>
-          <green> 0.2 </green>
-          <blue>  0.0 </blue>
-        </emission>
-      </instrument-lighting>
-      <hide-fiche type="bool"> 0 </hide-fiche>
+      <hide-fiche type="bool">0</hide-fiche>
     </model>
+    
+    <help>
+      <title>Zlin z50 lx</title>
+      <key>
+        <name>a</name>
+        <desc>Autostart</desc>
+      </key>
+      <key>
+        <name>q</name>
+        <desc>Autostop</desc>
+      </key>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+      <key>
+        <name>S</name>
+        <desc>Start smoke</desc>
+      </key>
+      <key>
+        <name>u</name>
+        <desc>Stop smoke</desc>
+      </key>
+    </help>
 
     <instrumentation>
       <encoder>
+        <serviceable type="bool">1</serviceable>
         <name>encoder</name>
         <number>0</number>
       </encoder>
@@ -41,10 +59,10 @@
 
     <systems>
       <autopilot>
-        <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/kap140/KAP140.xml</path>
+        <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/kap140/autopilot/KAP140.xml</path>
       </autopilot>
     </systems>
-
+    
   </sim>
 
   <controls>
@@ -64,27 +82,32 @@
   <nasal>
     <z50lx>
       <file>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/kcs55/kcs55.nas</file>
-            <script><![CDATA[
-              KCS55.new();
-            ]]></script>
+      <script><![CDATA[
+        KCS55.new();
+        ]]>
+      </script>
     </z50lx>
     <kap140>
-      <file>Aircraft/Generic/kap140.nas</file>
+      <file>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/kap140/autopilot/kap140.nas</file>
       <!-- We can set some variables that might be
            aircraft specific. We must do it after the file
-           to override the ones that are in the .nas file.-->
-      <script><![CDATA[
-                     headingNeedleDeflection = "/instrumentation/nav/heading-needle-deflection";
-                     gsNeedleDeflection = "/instrumentation/nav/gs-needle-deflection";
-                     staticPressure = "systems/static/pressure-inhg";
+           to override the ones that are in the .nas file.
+           gsNeedleDeflection = "/instrumentation/nav/gs-needle-deflection";
+      -->
+      <script>
+        <![CDATA[ 
+          headingNeedleDeflection = "/instrumentation/nav/heading-needle-deflection";
+          gsNeedleDeflection = "/instrumentation/nav/gs-needle-deflection";
+          staticPressure = "systems/static/pressure-inhg";
         ]]>
       </script>
     </kap140>
     <ki266>
-      <file>Aircraft/Instruments-3d/ki266/ki266.nas</file>
+      <file>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/ki266/ki266.nas</file>
       <script><![CDATA[
         ki266.new(0);
-      ]]></script>
+        ]]>
+      </script>
     </ki266>
   </nasal>
 

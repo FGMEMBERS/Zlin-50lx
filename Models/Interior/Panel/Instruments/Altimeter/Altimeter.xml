@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -30,16 +30,25 @@
     <object-name>vitre</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitre</object-name>
+  </effect>
+
   <animation>
     <type>material</type>
     <object-name>Face</object-name>
     <object-name>Ptr1000</object-name>
     <object-name>Ptr100</object-name>
     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -79,8 +88,8 @@
         <command>property-adjust</command>
         <property>/instrumentation/altimeter/setting-inhg</property>
         <step> -0.01 </step>
-        <min> 26.0 </min>
-        <max> 33.0 </max>
+        <min>  26.00 </min>
+        <max>  33.00 </max>
         <wrap>false</wrap>
       </binding>
     </action>
@@ -92,8 +101,8 @@
         <command>property-adjust</command>
         <property>/instrumentation/altimeter/setting-inhg</property>
         <step> -0.1 </step>
-        <min> 26.0 </min>
-        <max> 33.0 </max>
+        <min>  26.0 </min>
+        <max>  33.0 </max>
         <wrap>false</wrap>
       </binding>
     </action>
@@ -111,8 +120,8 @@
         <command>property-adjust</command>
         <property>/instrumentation/altimeter/setting-inhg</property>
         <step> 0.01 </step>
-        <min> 26.0 </min>
-        <max> 33.0 </max>
+        <min> 26.00 </min>
+        <max> 33.00 </max>
         <wrap>false</wrap>
       </binding>
     </action>
@@ -132,5 +141,3 @@
   </animation>
 
 </PropertyList>
-
-

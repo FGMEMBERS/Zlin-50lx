@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Zlin 50 lx
      3D model by Emmanuel BARANGER
@@ -160,10 +160,7 @@
   <!-- Pilot -->
   <weight x="0.475" y="0" z="0.057" mass-prop="/sim/weight[0]/weight-lb"/>
 
-  <!-- Mass distribution
-       CG theorique x=0.961 y=0.0 z=-0.510
-  -->
+  <!-- Mass distribution -->
   <ballast x="-0.534" y="-0.001" z="-1.616" mass="350"/>
   
 </airplane>
-

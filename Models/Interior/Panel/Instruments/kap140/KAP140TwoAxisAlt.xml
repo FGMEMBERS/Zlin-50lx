@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
 _______________________________________________________________________________
 KAP140 Two Axis with Altitude Preselect autopilot instrument.
@@ -23,6 +23,7 @@ properties' values.
   <animation>
     <!-- Objets opaques -->
     <object-name>base</object-name>
+    
     <object-name>knob-inner</object-name>
     <object-name>knob-outer</object-name>
     <object-name>ap-btn</object-name>
@@ -35,34 +36,39 @@ properties' values.
     <object-name>up-btn</object-name>
     <object-name>arm-btn</object-name>
     <object-name>baro-btn</object-name>
-
-    <!-- Objets transparents -->
     <object-name>knob-left</object-name>
     <object-name>knob-right</object-name>
+
+
     <object-name>alt-digit1</object-name>
     <object-name>alt-digit2</object-name>
     <object-name>alt-digit3</object-name>
     <object-name>alt-digit4</object-name>
     <object-name>alt-digit5</object-name>
-    <object-name>vs-minus</object-name>
+    
     <object-name>vs-digit2</object-name>
     <object-name>vs-digit3</object-name>
     <object-name>vs-digit4</object-name>
     <object-name>vs-digit5</object-name>
+
+    <object-name>vs-minus</object-name>
     <object-name>vs-digit2-minus</object-name>
     <object-name>vs-digit3-minus</object-name>
     <object-name>vs-digit4-minus</object-name>
     <object-name>vs-digit5-minus</object-name>
+
     <object-name>hpa-digit2</object-name>
     <object-name>hpa-digit3</object-name>
+    <object-name>hpa-point</object-name>
     <object-name>hpa-digit4</object-name>
     <object-name>hpa-digit5</object-name>
+
     <object-name>inhg-digit2</object-name>
     <object-name>inhg-digit3</object-name>
+    <object-name>inhg-point</object-name>
     <object-name>inhg-digit4</object-name>
     <object-name>inhg-digit5</object-name>
-    <object-name>hpa-point</object-name>
-    <object-name>inhg-point</object-name>
+
     <object-name>roll-axis-fail</object-name>
     <object-name>pitch-axis-fail</object-name>
     <object-name>nav-arm-ann</object-name>
@@ -88,6 +94,8 @@ properties' values.
     <object-name>rev-ann</object-name>
     <object-name>hdg-ann</object-name>
     <object-name>nav-ann</object-name>
+
+    <!-- Objets transparents -->
     <object-name>vitre</object-name>
   </animation>
 
@@ -102,6 +110,15 @@ properties' values.
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitre</object-name>
   </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitre</object-name>
+  </effect>
 
   <animation>
     <name>annunciators</name>
@@ -198,10 +215,24 @@ properties' values.
     <object-name>inhg-digits</object-name>
     <object-name>annunciators</object-name>
     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>knob-outer</object-name>
+    <object-name>knob-inner</object-name>
+    <object-name>base</object-name>
+    <object-name>buttons</object-name>
+    <emission>
       <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.2 </red>
+      <green> 0.1 </green>
+      <blue>  0.1 </blue>
     </emission>
   </animation>
 
@@ -1105,6 +1136,7 @@ properties' values.
   <animation>
     <type>pick</type>
     <object-name>knob-left</object-name>
+    <visible>false</visible>
     <action>
       <name>Knob small down</name>
       <button>0</button>
@@ -1126,6 +1158,7 @@ properties' values.
   <animation>
     <type>pick</type>
     <object-name>knob-right</object-name>
+    <visible>false</visible>
     <action>
       <name>Knob small up</name>
       <button>0</button>
@@ -1144,18 +1177,4 @@ properties' values.
     </action>
   </animation>
   
-  <animation>
-    <type>material</type>
-    <object-name>knob-outer</object-name>
-    <object-name>knob-inner</object-name>
-    <object-name>base</object-name>
-    <object-name>buttons</object-name>
-    <emission>
-      <red>0.75</red>
-      <green>0.25</green>
-      <blue>0.10</blue>
-      <factor-prop>/controls/lighting/panel-norm</factor-prop>
-    </emission>
-  </animation>
-
 </PropertyList>

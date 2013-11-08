@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!--
   Animations for the ki525 hsi indicator
@@ -64,21 +64,19 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>material</type>
-    <property-base>sim/model/material/cockpit</property-base>
-    <object-name>fond</object-name>
-    <object-name>cache</object-name>
-    <emission>
-      <red>   0.50 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
-    </emission>
-  </animation>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitre</object-name>
+  </effect>
 
   <animation>
     <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>cache</object-name>
     <object-name>CompassRose</object-name>
     <object-name>TO</object-name>
     <object-name>FROM</object-name>
@@ -96,10 +94,10 @@
     <object-name>HDGSelector</object-name>
     <object-name>AircraftSymbol</object-name>
     <emission>
-      <red>   1 </red>
-      <green> 0 </green>
-      <blue>  0 </blue>
-      <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
@@ -107,119 +105,109 @@
     <type>rotate</type>
     <object-name>CompassRose</object-name>
     <property alias="../../params/indicated-heading"/>
-    <factor>1.0</factor>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
+    <factor> 1 </factor>
     <center>
       <x-m> -0.001 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.000 </z-m>
     </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>HDGBug</object-name>
     <property alias="../../params/indicated-heading"/>
-    <factor>1.0</factor>
+    <factor> 1 </factor>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
       <z> 0 </z>
     </axis>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>HDGBug</object-name>
     <property alias="../../params/selected-heading"/>
-    <factor>-1.0</factor>
+    <factor> -1 </factor>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
       <z> 0 </z>
     </axis>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>HDGSelector</object-name>
     <property alias="../../params/selected-heading"/>
-    <factor>-8.0</factor>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
+    <factor> -8 </factor>
     <center>
       <x-m>  0.0000000 </x-m>
       <y-m>  0.0309671 </y-m>
       <z-m> -0.0274502 </z-m>
     </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>HDGSelector</object-name>
     <property alias="../../params/indicated-heading"/>
-    <factor>8.0</factor>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
+    <factor> 8 </factor>
     <center>
       <x-m>  0.0000000 </x-m>
       <y-m>  0.0309671 </y-m>
       <z-m> -0.0274502 </z-m>
     </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>OBSSelector</object-name>
     <property alias="../../params/selected-course"/>
-    <factor>-8.0</factor>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
+    <factor> -8 </factor>
     <center>
       <x-m>  0.0000000 </x-m>
       <y-m> -0.0309671 </y-m>
       <z-m> -0.0274502 </z-m>
     </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>OBSSelector</object-name>
     <property alias="../../params/indicated-heading"/>
-    <factor>8.0</factor>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
+    <factor> 8 </factor>
     <center>
       <x-m>  0.0000000 </x-m>
       <y-m> -0.0309671 </y-m>
       <z-m> -0.0274502 </z-m>
     </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
   <animation>
@@ -231,17 +219,12 @@
     <object-name>TO</object-name>
     <object-name>FROM</object-name>
     <property alias="../../params/indicated-heading"/>
-    <factor>1.0</factor>
+    <factor> 1 </factor>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
       <z> 0 </z>
     </axis>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
   </animation>
 
   <animation>
@@ -253,17 +236,12 @@
     <object-name>TO</object-name>
     <object-name>FROM</object-name>
     <property alias="../../params/selected-course"/>
-    <factor>-1.0</factor>
+    <factor> -1 </factor>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
       <z> 0 </z>
     </axis>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
   </animation>
 
   <animation>
@@ -456,16 +434,16 @@
       <entry><ind> 0.9 </ind><dep> 30 </dep></entry>
       <entry><ind> 1.0 </ind><dep> 40 </dep></entry>
     </interpolation>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
     <center>
       <x-m>  0.0000000 </x-m>
       <y-m> -0.0217139 </y-m>
       <z-m>  0.0212677 </z-m>
     </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
   <animation>
@@ -476,23 +454,23 @@
       <entry><ind> 0 </ind><dep> -40 </dep></entry>
       <entry><ind> 1 </ind><dep>   0 </dep></entry>
     </interpolation>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
     <center>
       <x-m> 0.0000000 </x-m>
       <y-m> 0.0217139 </y-m>
       <z-m> 0.0212677 </z-m>
     </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
   <animation>
     <type>translate</type>
     <object-name>TO</object-name>
     <property alias="../../params/to-flag"/>
-    <factor>0.00712488</factor>
+    <factor> 0.00712488 </factor>
     <axis>
       <x> 0 </x>
       <y> 0 </y>
@@ -504,7 +482,7 @@
     <type>translate</type>
     <object-name>FROM</object-name>
     <property alias="../../params/from-flag"/>
-    <factor>-0.00712488</factor>
+    <factor> -0.00712488 </factor>
     <axis>
       <x> 0 </x>
       <y> 0 </y>
@@ -516,7 +494,7 @@
     <type>translate</type>
     <object-name>GS</object-name>
     <property alias="../../params/gs-needle-deflection"/>
-    <factor>0.004535342857142857143</factor>
+    <factor> 0.004535342857142857143 </factor>
     <axis>
       <x> 0 </x>
       <y> 0 </y>
@@ -531,11 +509,11 @@
       <property alias="../../../params/has-gs"/>
       <greater-than>
         <property alias="../../../../params/gs-needle-deflection"/>
-        <value>-5</value>
+        <value> -5 </value>
       </greater-than>
       <less-than>
         <property alias="../../../../params/gs-needle-deflection"/>
-        <value>5.0</value>
+        <value> 5 </value>
       </less-than>
     </condition>
   </animation>
@@ -544,17 +522,17 @@
     <type>rotate</type>
     <object-name>ArrowBody</object-name>
     <property alias="../../params/cdi-needle-deflection"/>
-    <factor>2.5</factor>
-    <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
-    </axis>
+    <factor> 2.5 </factor>
     <center>
       <x-m> -0.0417058 </x-m>
       <y-m>  0.0000000 </y-m>
       <z-m>  0.0000000 </z-m>
     </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
   </animation>
 
 </PropertyList>

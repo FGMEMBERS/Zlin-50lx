@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- Standby Gyro
-     Syd Adams
--->
 <PropertyList>
 
   <path>STBYai.ac</path>
@@ -31,6 +28,15 @@
     <object-name>vitre</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitre</object-name>
+  </effect>
+
   <animation>
     <type>material</type>
     <object-name>STBYai.cage</object-name>
@@ -38,10 +44,10 @@
     <object-name>STBYai.ball</object-name>
     <object-name>STBYai.rollneedle</object-name>
     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -105,4 +111,3 @@
   </animation>
 
 </PropertyList>
-

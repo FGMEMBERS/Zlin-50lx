@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList include="z50lx-base.xml">
 
@@ -14,8 +14,36 @@
       <livery>
         <file type="string">default</file>
       </livery>
-      <hide-fiche type="bool"> 0 </hide-fiche>
+      <hide-fiche type="bool">0</hide-fiche>
     </model>
+
+    <help>
+      <title>Zlin z50 lx</title>
+      <key>
+        <name>a</name>
+        <desc>Autostart</desc>
+      </key>
+      <key>
+        <name>q</name>
+        <desc>Autostop</desc>
+      </key>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+      <key>
+        <name>S</name>
+        <desc>Start smoke</desc>
+      </key>
+      <key>
+        <name>u</name>
+        <desc>Stop smoke</desc>
+      </key>
+      <key>
+        <name>f</name>
+        <desc>Show/Hide fiche</desc>
+      </key>
+    </help>
 
   </sim>
 

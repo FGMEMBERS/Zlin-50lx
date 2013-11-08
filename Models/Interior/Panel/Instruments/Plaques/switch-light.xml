@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>switch-light.ac</path>
+  
+  <animation>
+    <object-name>switch-light</object-name>
+  </animation>
+  
+</PropertyList>
