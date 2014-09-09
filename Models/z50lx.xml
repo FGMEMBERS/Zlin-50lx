@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Le fuselage -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/main.xml</path>
+  </model>
+
+  <!-- Interior -->
+  <model>
+    <name>Interieur</name>
+    <path>Aircraft/Zlin-50lx/Models/Interior/interior.xml</path>
+  </model>
+
+  <!-- For Rembrandt -->
+  <animation>
+    <type>noshadow</type>
+    <object-name>Interieur</object-name>
+  </animation>
+
+</PropertyList>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Flavien Blanc -->
+<PropertyList>
+
+  <path>fiche.ac</path>
+    
+  <animation>
+    <type>select</type>
+    <object-name>page1</object-name>
+    <condition>
+      <equals>
+        <property>/sim/model/hide-fiche</property>
+        <value>true</value>
+      </equals>
+    </condition>
+  </animation>
+
+</PropertyList>

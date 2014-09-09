@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <default>
+    <menu n="10">
+      <label>Zlin 50 lx</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Autostart</label>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/electric/battery-switch</property>
+          <value>1</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/lighting/instrument-lights</property>
+          <value>1</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/lighting/nav-lights</property>
+          <value>1</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/lighting/beacon</property>
+          <value>1</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/engines/engine/magnetos</property>
+          <value>3</value>
+        </binding>
+      </item>
+      <item>
+        <label>Autostop</label>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/electric/battery-switch</property>
+          <value>0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/lighting/instrument-lights</property>
+          <value>0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/lighting/nav-lights</property>
+          <value>0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/lighting/beacon</property>
+          <value>0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/engines/engine/magnetos</property>
+          <value>0</value>
+        </binding>
+      </item>
+      <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+      <item>
+        <label>Show/hide informations</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/hide-fiche</property>
+        </binding>
+      </item>
+      <item>
+        <label>Immatriculation</label>
+        <binding>
+          <command>nasal</command>
+          <script>z50lx.immat_dialog.toggle()</script>
+        </binding>
+      </item>
+    </menu>
+  </default>
+
+</PropertyList>

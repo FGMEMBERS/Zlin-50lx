@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <description>Zlin 50 lx (YASim)</description>
+    <author>Emmanuel BARANGER (3D), Pierre GEOFFROY (FDM), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture), Victhor (IRF Mod)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>early production</status>
+    
+    <fuel-fraction>0.75</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/Zlin-50lx/z50lx-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Zlin-50lx/Sounds/z50lx-sound.xml</path>
+    </sound>
+
+    <panel>
+      <visibility archive="y">false</visibility>
+    </panel>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                             <!-- 0 immat -->
+        <int type="int" n="1">  0 </int>                                             <!-- 1 immat -->
+        <int type="int" n="2">  0 </int>                                             <!-- 2 immat -->
+        <int type="int" n="3">  0 </int>                                             <!-- 3 immat -->
+        <int type="int" n="4">  0 </int>                                             <!-- 4 immat -->
+        <int type="int" n="5">  0 </int>                                             <!-- 5 immat -->
+        <int type="bool" n="6"> 0 </int>                                             <!-- 6 smoke/bomb/torpedo -->
+        <int type="int" n="7">  0 </int>                                             <!-- 7 color -->
+        <int type="bool" n="8" alias="/controls/lighting/nav-lights">  0 </int>      <!-- 8 nav-lights -->
+        <int type="double" n="9" alias="/sim/model/lights/beacon/state"> 0 </int>    <!-- 9 beacon-lights -->
+        <int type="double" n="10" alias="/sim/model/lights/strobe/state"> 0 </int>   <!--10 strobe-lights -->
+        <int type="bool" n="11" alias="/controls/lighting/landing-lights"> 0 </int>  <!--11 landing-lights -->
+        <int n="12" alias="/controls/electric/key-pos">  0 </int>                    <!--12 key position -->
+        <float n="0" alias="/sim/model/door-positions/crew/position-norm"> 1 </float>
+        <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                            <!-- altitude for MP shadow -->
+        <float n="3" alias="/position/altitude-ft"> 0 </float>                           <!-- altitude for Smoke/Trail -->
+        <float n="6" alias="/engines/engine[0]/rpm" />
+        <float n="8" alias="/engines/engine[0]/cranking" />
+        <string n="0" type="string" />
+        <string n="9" type="string" />                                        <!-- string[9] reserved for bombable mode -->
+      </generic>
+    </multiplay>
+
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>175</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+    <menubar include="Dialogs/z50lx-menu.xml"/>
+
+  </sim>
+  
+  <controls>
+    <smoke alias="/sim/multiplay/generic/int[6]"/>
+  </controls>
+  
+  <input>
+    <keyboard include="Nasal/z50lx-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/Zlin-50lx/Nasal/doors.nas</file>
+    </doors>
+    <z50lx>
+      <file>Aircraft/Zlin-50lx/Nasal/light.nas</file>
+      <file>Aircraft/Zlin-50lx/Nasal/liveries.nas</file>
+      <file>Aircraft/Zlin-50lx/Nasal/immat.nas</file>
+      <file>Aircraft/Zlin-50lx/Nasal/fluids.nas</file>
+      <file>Aircraft/Zlin-50lx/Nasal/Electrical.nas</file>
+      <file>Aircraft/Zlin-50lx/Nasal/system.nas</file>
+    </z50lx>
+  </nasal>
+
+</PropertyList>

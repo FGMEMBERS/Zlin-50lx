@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+  
+  <animation>
+    <object-name>panel1</object-name>
+    <object-name>panel2</object-name>
+    <object-name>panel3</object-name>
+    <object-name>pates</object-name>
+    <object-name>crew</object-name>
+  </animation>
+  
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Plaques/all-plaques.xml</path>
+  </model>
+
+  <!-- Altimètre -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Altimeter/Altimeter.xml</path>
+    <offsets>
+      <x-m>  0.128 </x-m>
+      <y-m> -0.181 </y-m>
+      <z-m>  0.016 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Indicateur de virage -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Turn/Turn.xml</path>
+    <offsets>
+      <x-m> 0.128 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.013 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pour vol sur le dos -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Turn/Turn2.xml</path>
+    <offsets>
+      <x-m> 0.142 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.176 </z-m>
+    </offsets>
+  </model>
+
+  <!-- compte tours -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/RPM/RPM.xml</path>
+    <offsets>
+      <x-m> 0.128 </x-m>
+      <y-m> 0.086 </y-m>
+      <z-m> 0.111 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Anémomètre -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/ASI/ASI.xml</path>
+    <offsets>
+      <x-m>  0.128 </x-m>
+      <y-m> -0.181 </y-m>
+      <z-m>  0.103 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Variomètre -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/VSI/VSI.xml</path>
+    <offsets>
+      <x-m>  0.128 </x-m>
+      <y-m> -0.092 </y-m>
+      <z-m>  0.017 </z-m>
+    </offsets>
+  </model>
+
+  <!-- manifold pressure -->
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/MPFuel/MPFuel.xml</path>
+   <offsets>
+      <x-m>  0.128 </x-m>
+      <y-m>  0.092 </y-m>
+      <z-m>  0.015 </z-m>
+   </offsets>
+  </model>
+  
+  <!-- Fusibles -->
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/fusible.xml</path>
+   <offsets>
+      <x-m>  0.115 </x-m>
+      <y-m>  0.198 </y-m>
+      <z-m> -0.091 </z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/fusible.xml</path>
+   <offsets>
+      <x-m>  0.115 </x-m>
+      <y-m>  0.229 </y-m>
+      <z-m> -0.091 </z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/fusible.xml</path>
+   <offsets>
+      <x-m>  0.115 </x-m>
+      <y-m>  0.047 </y-m>
+      <z-m> -0.159 </z-m>
+   </offsets>
+  </model>
+
+  <!-- Switch -->
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+   <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.158 </y-m>
+      <z-m> -0.083 </z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/smoke.xml</path>
+   <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m> -0.083 </z-m>
+   </offsets>
+  </model>
+
+  <!-- Chronomètre -->
+  <model>
+    <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.128 </x-m>
+      <y-m> -0.092 </y-m>
+      <z-m>  0.111 </z-m>
+    </offsets>
+  </model>
+
+  <!-- press and temp -->
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/temp-n-press/temp.xml</path>
+   <offsets>
+      <x-m>  0.128 </x-m>
+      <y-m>  0.181 </y-m>
+      <z-m>  0.103 </z-m>
+   </offsets>
+  </model>
+
+  <!-- magneto switch -->
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/magneto/mags.xml</path>
+   <offsets>
+      <x-m>  0.115 </x-m>
+      <y-m> -0.202 </y-m>
+      <z-m> -0.088 </z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+   <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.103 </y-m>
+      <z-m> -0.083 </z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/bat.xml</path>
+   <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m>  0.096 </y-m>
+      <z-m> -0.083 </z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+   <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m>  0.114 </y-m>
+      <z-m> -0.083 </z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/instr.xml</path>
+   <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m>  0.132 </y-m>
+      <z-m> -0.083 </z-m>
+   </offsets>
+  </model>
+  
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/navstrb.xml</path>
+   <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m>  0.149 </y-m>
+      <z-m> -0.083 </z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/switch/land.xml</path>
+   <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m>  0.167 </y-m>
+      <z-m> -0.083 </z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/light/light.xml</path>
+   <offsets>
+      <x-m>  0.11409 </x-m>
+      <y-m>  0.21401 </y-m>
+      <z-m> -0.05788 </z-m>
+   </offsets>
+  </model>
+
+  <!-- Les visses -->
+  <model>
+   <path>Aircraft/Zlin-50lx/Models/Interior/Panel/Instruments/Objects/all-crew.xml</path>
+  </model>
+
+</PropertyList>
