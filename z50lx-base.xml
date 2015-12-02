@@ -5,14 +5,16 @@
   <sim include="Nasal/views.xml">
 
     <description>Zlin 50 lx (YASim)</description>
-    <author>Emmanuel BARANGER (3D), Pierre GEOFFROY (FDM), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture), Victhor (IRF Mod)</author>
+    <author>Emmanuel BARANGER (3D), Pierre GEOFFROY (FDM), Sebastien MARQUE (Panel), Laurent HAYVEL (Texture), Victhor (IFR Mod)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>early production</status>
     
     <fuel-fraction>0.75</fuel-fraction>
 
     <startup>
-      <splash-texture>Aircraft/Zlin-50lx/z50lx-splash.png</splash-texture>
+      <splash-texture>Aircraft/Zlin-50lx/Splash/splash.png</splash-texture>
+	  <splash-texture>Aircraft/Zlin-50lx/Splash/splash1.png</splash-texture>
+	  <splash-texture>Aircraft/Zlin-50lx/Splash/splash2.png</splash-texture>
     </startup>
 
     <sound>
